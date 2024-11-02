@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwamhali Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .content, .sidebar {
+            padding: 20px;
+        }
+        .content {
+            width: 70%;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-left: 20px;
+        }
+        .blog-post {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #333;
+            margin: 0;
+        }
+        .blog-post .date {
+            color: #777;
+            font-size: 0.9em;
+        }
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        .categories, .recent-posts {
+            margin-bottom: 20px;
+        }
+        .categories ul, .recent-posts ul {
+            list-style: none;
+            padding: 0;
+        }
+        .categories li, .recent-posts li {
+            margin-bottom: 10px;
+        }
+        .categories a, .recent-posts a {
+            color: #333;
+            text-decoration: none;
+        }
+        .categories a:hover, .recent-posts a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+        .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Kwamhali Blog</h1>
+    <p>Latest News, Stories, and Events in Kwamhali</p>
+</header>
+
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for content or business info...">
+    <button onclick="searchContent()">Search</button>
+</div>
+
+<div class="container">
+    <div class="content">
+        <div class="blog-post">
+            <h2>Welcome to the Kwamhali Blog</h2>
+            <p class="date">Published on: October 28, 2024</p>
+            <img src="https://via.placeholder.com/600x300" alt="Welcome image">
+            <p>This is the first blog post on Kwamhali. Here, we’ll bring you the latest news and updates from our vibrant community. Stay tuned for more content!</p>
+        </div>
+
+        <!-- Local Businesses Section -->
+        <div class="blog-post">
+            <h2>Local Businesses in Kwamhali</h2>
+            <p class="date">Published on: November 2, 2024</p>
+            <img src="https://via.placeholder.com/600x300" alt="Local Businesses">
+            <p>Explore the various local businesses in Kwamhali that contribute to our community’s vibrant economy:</p>
+            
+            <h3>Taverns</h3>
+            <ul>
+                <li><strong>Kwa Motha Tavern</strong> - Location: Kwamhali Main Street, Contact: (012) 345-6789</li>
+                <li><strong>Phola's Tavern</strong> - Location: Kwamhali Central, Contact: (012) 345-6790</li>
+                <li><strong>Mthethwa Tavern</strong> - Location: Near Kwamhali Park, Contact: (012) 345-6791</li>
+            </ul>
+            
+            <h3>Tuck Shops</h3>
+            <ul>
+                <li><strong>Mgwengwe Tuck Shop</strong> - Location: Corner of Mgwengwe Street, Contact: (012) 345-6792</li>
+                <li><strong>Manyevula Tuck Shop</strong> - Location: Opposite Kwamhali School, Contact: (012) 345-6793</li>
+                <li><strong>Gasa Tuck Shop</strong> - Location: Gasa Road, Contact: (012) 345-6794</li>
+                <li><strong>Mlaba Tuck Shop</strong> - Location: Near the Kwamhali Bus Stop, Contact: (012) 345-6795</li>
+            </ul>
+            
+            <h3>Fast Food Spots</h3>
+            <ul>
+                <li><strong>Hlebudele Fast Food</strong> - Location: Hlebudele Street, Contact: (012) 345-6796</li>
+                <li><strong>Maka Sisanda's Fast Food</strong> - Location: Next to Kwamhali Market, Contact: (012) 345-6797</li>
+            </ul>
+            
+            <h3>Cannabis Sellers</h3>
+            <ul>
+                <li><strong>Khustar</strong> - Location: Khustar Lane, Contact: (012) 345-6798</li>
+                <li><strong>Mrango</strong> - Location: Mrango Road, Contact: (012) 345-6799</li>
+                <li><strong>Nsunga</strong> - Location: Nsunga Avenue, Contact: (012) 345-6800</li>
+                <li><strong>Msha</strong> - Location: Msha Street, Contact: (012) 345-6801</li>
+                <li><strong>Narh</strong> - Location: Near Narh Bridge, Contact: (012) 345-6802</li>
+                <li><strong>Maphebeza</strong> - Location: Maphebeza Corner, Contact: (012) 345-6803</li>
+            </ul>
+        </div>
+        <!-- End of Local Businesses Section -->
+        
+    </div>
+
+    <aside class="sidebar">
+        <div class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Community News</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Stories</a></li>
+            </ul>
+        </div>
+        <div class="recent-posts">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Welcome to the Kwamhali Blog</a></li>
+                <li><a href="#">Local Businesses in Kwamhali</a></li>
+                <li><a href="#">Upcoming Events in Kwamhali</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<footer class="footer">
+    <p>Created by MFana_ka_gogo_mesuli</p>
+    <p>Connect with me on social media:</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://wa.me/" target="_blank">WhatsApp</a> |
+        <a href="https://www.tiktok.com" target="_blank">TikTok</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+</footer>
+
+<script>
+    function searchContent() {
+        const input = document.getElementById("searchInput").value.toLowerCase();
+        const posts = document.querySelectorAll(".blog-post");
+        let found = false;
+
+        posts.forEach(post => {
+            const title = post.querySelector("h2").textContent.toLowerCase();
+            const content = post.querySelector("
